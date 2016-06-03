@@ -5,20 +5,19 @@ body{
 }
 
 .seychelles-content{
-
   padding:50px 0;
 }
-.container{
 
+.container{
   width: 90%;
 }
+
 .carousel-inner {
   max-height: 700px;
-
 }
 
 .btn-lg{
-margin: 15px,auto;;
+margin: 15px auto;
 }
 
 .btn-row{
@@ -33,5 +32,4 @@ margin: 15px,auto;;
 
 .content-row{
   margin-top: 30px;
-  
 }
