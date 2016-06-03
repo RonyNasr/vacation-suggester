@@ -1,5 +1,6 @@
 body{
   margin-top: 20px;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0), rgba(222,222,222,1)); 
 }
 
 .container{
@@ -16,7 +17,13 @@ body{
 }
 
 .btn-lg{
-margin: 15px;
+margin: 15px,auto;;
+}
+
+.btn-row{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 .carousel-caption{
