@@ -36,11 +36,13 @@
     <div class="container">
       <!-- start carousel -->
       <div id="myCarousel" class="carousel slide">
+        <!-- carousel indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+        <!-- carousel content -->
         <div class="carousel-inner">
           <div class="item active">
               <img class="img-responsive" src="img/paris.jpg" alt="Paris">
@@ -60,8 +62,9 @@
             </div>
               <img class="img-responsive" src="img/kenya.jpg" alt="Kenya">
           </div>
-          </div>
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        </div>
+        <!-- carousel controls  -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
           <span class="icon-prev"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
@@ -76,7 +79,7 @@
         <form id="test">
           <div class="row">
             <h3>Question 1: what's your favorite ice-cream flavor?</h3>
-            <div class="radio" id="q1">
+            <div class="radio">
               <label>
                 <input type="radio" name="flavor" value="3" >
                 Chocolate
@@ -96,7 +99,7 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="flavor" value="0">
+                <input type="radio" name="flavor" value="2">
                 Cookies & Cream
               </label>
             </div>
@@ -104,7 +107,7 @@
 
           <div class="row">
             <h3>Question 2: what's your favorite color?</h3>
-            <div class="radio" id="q2">
+            <div class="radio">
               <label>
                 <input type="radio" name="color" value="2" >
                 Blue
@@ -124,7 +127,7 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="color" value="0">
+                <input type="radio" name="color" value="3">
                 yellow
               </label>
             </div>
@@ -132,16 +135,16 @@
 
           <div class="row">
             <h3>Question 3: what's your favorite cuisine?</h3>
-            <div class="radio" id="q1">
-              <label>
-                <input type="radio" name="cuisine" value="1">
-                Mediteranean
-              </label>
-            </div>
             <div class="radio">
               <label>
                 <input type="radio" name="cuisine" value="2">
                 Asian
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cuisine" value="1">
+                Mediteranean
               </label>
             </div>
             <div class="radio">
@@ -152,7 +155,7 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="cuisine" value="0">
+                <input type="radio" name="cuisine" value="1">
                 Lebanese
               </label>
             </div>
@@ -160,15 +163,9 @@
 
           <div class="row">
             <h3>Question 4: what's your favorite passtime?</h3>
-            <div class="radio" id="q1">
-              <label>
-                <input type="radio" name="passtime" value="1" >
-                Fine dining
-              </label>
-            </div>
             <div class="radio">
               <label>
-                <input type="radio" name="passtime" value="0">
+                <input type="radio" name="passtime" value="2">
                 Reading
               </label>
             </div>
@@ -184,11 +181,23 @@
                 Sleeping
               </label>
             </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="passtime" value="1" >
+                Fine dining
+              </label>
+            </div>
           </div>
 
           <div class="row">
             <h3>Question 5: what's your favorite drink?</h3>
-            <div class="radio" id="q5">
+            <div class="radio">
+              <label>
+                <input type="radio" name="drink" value="3">
+                Whiskey
+              </label>
+            </div>
+            <div class="radio">
               <label>
                 <input type="radio" name="drink" value="1" >
                 Champagne
@@ -196,14 +205,8 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="drink" value="0">
-                water
-              </label>
-            </div>
-            <div class="radio">
-              <label>
                 <input type="radio" name="drink" value="3">
-                Whiskey
+                water
               </label>
             </div>
             <div class="radio">
@@ -219,8 +222,6 @@
         </form>
       </div>
       <!-- End test -->
-
-
     </div>
   </body>
 </html>
