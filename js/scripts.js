@@ -47,14 +47,11 @@ $(document).ready(function() {
     var result = calculate(ans1,ans2,ans3,ans4,ans5);
 
     if(result === 1){
-      alert ("paris!");
-      // go to paris page
+      window.location.href = "paris.html";
     }else if (result === 2) {
-      alert ("Seychelles!");
-      // go to sey  chelles page
+      window.location.href = "seychelles.html";
     }else {
-      alert ("Kenya!");
-      // go to Kenya page
+      window.location.href = "kenya.html";
     }
     //console.log(sum);
 
