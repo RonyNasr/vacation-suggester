@@ -1,17 +1,18 @@
 //  back-end logic:
- var calculate = function(ans1,ans2,ans3,ans4,ans5){
-   // get the count for each result
-   var count1 = count(ans1,ans2,ans3,ans4,ans5,1);
-   var count2 = count(ans1,ans2,ans3,ans4,ans5,2);
-   var count3 = count(ans1,ans2,ans3,ans4,ans5,3);
-   // return the highest count
-   if (count1 > count2 && count1 > count3){
-     return 1;
-   }else if(count2 > count1 && count2 > count3){
-     return 2;
-   }else {
-     return 3;
-   }
+var calculate = function(ans1,ans2,ans3,ans4,ans5){
+ // get the count for each result
+ var count = [];
+ for (var i=1;i<=3;i++){
+   count.push(count(ans1,ans2,ans3,ans4,ans5,i));
+ }
+ // return the highest count
+ if (count[0] > count[1] && count[0] > count[2]){
+   return 1;
+ }else if(count[1] > count[0] && count[1] > count[2]){
+   return 2;
+ }else {
+   return 3;
+ }
 }
 
 // count how many times a certain value was selected
@@ -50,11 +51,12 @@ $(document).ready(function() {
     var result = calculate(ans1,ans2,ans3,ans4,ans5);
     //display result
     if(result === 1){
-      window.location.href = "paris.html";
+    //  window.location.href = "paris.html";
+      window.location.replace("paris.html");
     }else if (result === 2) {
-      window.location.href = "seychelles.html";
+      window.location.replace("seychelles.html");
     }else {
-      window.location.href = "kenya.html";
+      window.location.replace("kenya.html");
     }
 
 
